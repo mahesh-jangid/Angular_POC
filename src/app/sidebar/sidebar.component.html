@@ -1,0 +1,28 @@
+<!-- <div class="sidebar_container">
+    
+    <div class="sidebar_nav_links">
+        <ul>
+            <li>
+                <a routerLink="maincontent">Main Content</a>
+                <a routerLink="addUser">User Add</a>
+                <a routerLink="editUser">User Edit</a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+<div class="sidenav">
+  
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink]" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+                <i class="sidenav-link-icon" [class]="data.icon"></i>
+                <span class="sidenav-link-text" @fadeInOut >
+                    {{data.label}}
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>

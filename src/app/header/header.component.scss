@@ -1,0 +1,40 @@
+// .header{
+//     height: 70px;
+//     background-color: rgb(13, 31, 31);
+//     color: black;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+// }
+.header{
+   
+    height: 70px;
+   
+    background: #111212;
+    padding: 3px 5px;
+    color: white;
+    nav{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{
+            margin-top: 1.2rem;
+        }
+    }
+    .login-btn{
+        padding: 7px 16px;
+        border: none;
+        border-radius: 4px;
+
+        a{
+            text-decoration: none;
+            font-size: 17px;
+        }
+    }
+  }
